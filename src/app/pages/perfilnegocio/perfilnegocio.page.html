@@ -1,0 +1,57 @@
+<ion-content>
+  <div class="back" (click)="atras()">
+    <ion-icon name="arrow-back" color="light" style="zoom: 1.5; margin-left: 3%; margin-top: 3%;"></ion-icon>
+  </div>
+  <img src="../../../assets/img/zapataburguer.jpg" class="imgfondo">
+  <div class="titulo">
+    <ion-avatar class="logo" >
+      <img src="../../../assets/img/zapatena.JPG">
+    </ion-avatar>
+    <h1 style="margin-left: 5%;">Zapata Parrilla Méxicana<ion-icon color="secondary" style="margin-left: 5px; margin-bottom: -4px;" name="checkmark-circle"></ion-icon></h1>
+    <p style="margin-left: 5%; color: #666666;">Parrilla y Hamburguesas</p>
+    
+      <ion-row style="margin-top: -5%;">
+        <ion-col size="4"><p style="margin-left: 9%;">Calificación</p></ion-col>
+        <ion-col class="ion-align-self-start" size="3"><p style="margin-left: 5%;">4.6<ion-icon color="warning" name="star"></ion-icon></p></ion-col>
+        <ion-col><p style="color: #666666;">Cerrara pronto<ion-icon name="time" style="margin-left: 3px; margin-bottom: -3px;"></ion-icon></p></ion-col>
+      </ion-row>
+    <!-- <p style="margin-left: 5%;">Calificación</p>
+    <p style="margin-left: 5%;">4.6<ion-icon color="warning" name="star"></ion-icon></p> -->
+  </div>
+  <div class="navbar" style="height: 8%; display: flex; align-items: center;">
+    <h5 style="margin: 5%; color: white;">Menú</h5>
+  </div>
+
+  
+ <div class="parati">
+ <ion-title style="margin-top: 5%;">Menú</ion-title>
+    <ion-list>
+     <ion-item *ngFor="let platillos of menu" >
+       <ion-avatar slot="start" style="--border-radius:5px; zoom: 2;">
+         <img style=" border: white;" [src]='platillos.imagen'>
+       </ion-avatar>
+       <ion-label>
+         <h2><strong>{{platillos.nombreproducto}}</strong></h2>
+         <h3>${{platillos.precio}}</h3>
+         <h5 style="color: #400082;" *ngIf="platillos.enviofast === true"><ion-icon style="margin-right: 5px;" name="flash"></ion-icon><strong><i>Envío Fast</i></strong></h5>
+         <ion-button>Agregar</ion-button>
+       </ion-label>
+     </ion-item> 
+   </ion-list>
+
+
+</div>
+</ion-content>
+<ion-footer>
+
+  <div class="botoncarro">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-align-self-start" style="margin-left: 5px;">0</ion-col>
+        <ion-col class="ion-align-self-center" style="text-align: center;">Ver carrito</ion-col>
+        <ion-col class="ion-align-self-end" style="text-align: end; margin-right: 5px;">$0</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-footer>

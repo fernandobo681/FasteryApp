@@ -1,0 +1,158 @@
+<ion-header>
+  <!-- <div class="banner">
+    <strong><i>ENVIOS GRATIS USANDO EL CUPON: 'COVID-19'</i></strong>
+      </div> -->
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-title color="light">
+      <p class="logo" style="text-align: center;"><strong><i>FASTERY</i></strong></p>
+    </ion-title>   -->
+    <div class="buscar">
+      <p style="color: gray; padding-top: 4px; padding-bottom: 4px;"><ion-icon name="search" style="margin-right: 5px; margin-left: 7px;"></ion-icon>Buscar en Fastery</p>
+    </div>
+    <ion-icon color="light" slot="end" class="car" name="cart" (click)="iracarrito()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="margin-top: 10px; margin-bottom: 10px; text-align: center;">
+    <ion-title>
+     Hola Fernando
+    </ion-title>
+    <ion-title>
+      ¿Qué necesitas hoy?
+    </ion-title>
+  </div>
+
+  <ion-grid class="menu">
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/burguer.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Comida</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/fruit.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Súper</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/reposado_1.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Licores</strong></p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/farmacos.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Farmacia</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/recibo.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Servicios</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/libreria.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Papelería</strong></p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/audifonos.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Tecnología</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center;" src="../../assets/img/repartidor.png" height="80px" width="80px">
+      </div>
+      <p style="font-size: small;"><strong>Lo que quieras</strong></p>
+    </ion-col>
+    <ion-col>
+      <div class="cuadrado">
+        <img style="align-items: center; fill: white;" src="../../assets/img/plus-solid.svg" height="80px" width="80px">
+      </div>
+      <p  style="font-size: small;"><strong>Más opciones</strong></p>
+    </ion-col>
+  </ion-row>
+    </ion-grid>
+
+    <div class="promociones">
+      <ion-grid>
+        <ion-row>
+          <ion-col><ion-title>Promociones</ion-title></ion-col>
+          <ion-col>
+           <p style="font-size: small; text-align: end; margin-top: 5px;">ver más ></p>
+          </ion-col>
+         
+        </ion-row>
+      </ion-grid>
+    </div>
+
+ <div class="parati">
+   <ion-grid>
+     <ion-row style=" margin-bottom: -5px;">
+      <ion-col><ion-title>Recomendado para tí</ion-title></ion-col>
+       <ion-col>
+        <p style="font-size: small; text-align: end; margin-top: 5px;">ver más ></p>
+       </ion-col>
+     </ion-row>
+
+     <ion-list>
+      <ion-item *ngFor="let recomendaciones of recomendado" (click)="abrirNegocio(recomendaciones.id_negocio, recomendaciones.id_producto)">
+        <ion-avatar slot="start" style="--border-radius:5px; zoom: 2;">
+          <img [src]='recomendaciones.imagen'>
+        </ion-avatar>
+        <ion-label>
+          <h2><strong>{{recomendaciones.nombreproducto}}</strong></h2>
+          <h3>${{recomendaciones.precio}}</h3>
+          <p>{{recomendaciones.nombrenegocio}}</p>
+          <h5 style="color: #400082;" *ngIf="recomendaciones.enviofast === true"><ion-icon style="margin-right: 5px;" name="flash"></ion-icon><strong><i>Envío Fast</i></strong></h5>
+        </ion-label>
+      </ion-item> 
+    </ion-list>
+
+   </ion-grid>
+ </div>
+
+
+
+<div class="lomasvendido">
+    <ion-grid>
+      <ion-row style=" margin-bottom: -5px;">
+       <ion-col><ion-title>Lo más vendido</ion-title></ion-col>
+        <ion-col>
+         <p style="font-size: small; text-align: end; margin-top: 5px;">ver más ></p>
+        </ion-col>
+      </ion-row>
+ 
+      <ion-list>
+        <ion-item *ngFor="let lomastop of lomasvendido" (click)="abrirNegocio(lomastop.id_negocio, lomastop.id_producto)">
+          <ion-avatar slot="start" style="--border-radius:5px; zoom: 2;">
+            <img [src]='lomastop.imagen'>
+          </ion-avatar>
+          <ion-label>
+            <h2><strong>{{lomastop.nombreproducto}}</strong></h2>
+            <h3>${{lomastop.precio}}</h3>
+            <p>{{lomastop.nombrenegocio}}</p>
+            <h5 style="color: #400082;" *ngIf="lomastop.enviofast === true"><ion-icon style="margin-right: 5px;" name="flash"></ion-icon><strong><i>Envío Fast</i></strong></h5>
+          </ion-label>
+        </ion-item> 
+     </ion-list>
+ 
+    </ion-grid>
+  </div>
+
+</ion-content>

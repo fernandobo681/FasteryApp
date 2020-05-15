@@ -1,0 +1,114 @@
+.padding{
+    padding: 40px;
+    margin-top: 50%;
+  }
+  
+  .titulo{  
+    color: white;
+    margin-top: -40px;   
+}
+  
+  .componente{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .title{
+    color:  #400082;;
+  }
+  .login-form {
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  
+    .ahref{
+      font-size: 12px;
+      color:  #400082;
+    }
+  
+    .preguntas {
+      text-align: center;
+    }
+  
+  
+    .parrafo{
+      font-size: 12px;
+      color: gray;
+    }
+  
+    ion-list {
+      background: none;
+      ion-button{
+        --color-activated: #400082;
+  
+      }
+      ion-item {
+  
+        /*background: rgba(var(--ion-color-primary-rgb), 0.05); */
+        --background: #ECECEC;
+  
+        border-radius: 30px;
+        /* padding: 3px 20px !important; */
+        margin-bottom: 20px;
+        /* border: none !important; */
+        box-shadow: none !important;
+  
+        .item-native {
+          --background: none !important;
+        }
+  
+        & ion-select-option{
+          margin-left: auto;
+          max-width: unset;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 0;
+  
+          .select {
+            max-width: 100%;
+            .select-text {
+              font-size: 1.35rem;
+            }
+          }
+        }
+        &.item-input {
+          .text-input::placeholder {
+            color:  #400082 !important;
+            font-size: 1.3rem;
+          }
+        }
+  
+        .label {
+          font-size: 1.35rem;
+          font-weight: 400;
+          color: #78927e;
+          flex: unset;
+        }
+  
+      }
+    }
+  }
+
+  .flecha{
+    height: 20px;
+    width: 20px;
+    color: #ffffff;
+  }
+  .btnSesion{
+    margin-top: 10%;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    background-color: #400082;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #ffffff;
+}   

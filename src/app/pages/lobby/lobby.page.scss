@@ -1,0 +1,75 @@
+.fondo{
+    --ion-background-color:linear-gradient(to bottom,#471975, #200041);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo{  
+    color: white;
+    margin-top: -40px;   
+}
+
+.botones{
+    margin-top: 15%;
+}
+
+.btnFacebook{
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    background-color: #3B5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}   
+
+.logoface{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.btnGoogle{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    background-color: #D62D20;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #ffffff;
+}   
+
+.logogoogle{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.btnSesion{
+    margin-top: 5%;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #000000;
+}  
+
+.fondo{
+    // justify-content: center; 
+    // align-items: center;
+    position:absolute;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+  
+   
+}

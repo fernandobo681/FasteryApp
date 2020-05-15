@@ -1,0 +1,29 @@
+<ion-content class="fondo">
+  <div class="titulo">
+    <p style="font-size: 70px; text-align: center;"><strong><i>FASTERY</i></strong></p>
+    <p style="font-size: 20px; margin-top: -80px;  text-align: center; margin-left: 10px;"><i>DELIVERY & FOOD</i></p>
+  </div>
+
+  <div class="botones">
+    <div class="btnFacebook">
+      <img class="logoface" src="../../../assets/img/fbok.png"><p>Iniciar sesión con Facebook</p>
+    </div>
+    <div class="btnGoogle">
+      <img class="logogoogle" src="../../../assets/img/google.png"><p>Iniciar sesión con Google</p>
+    </div>
+    <p style="text-align: center; color: white;">o tambien puedes</p>
+    <div class="btnSesion" (click)="irainiciarSesion()">
+      <p><strong>Iniciar sesión con correo</strong></p>
+    </div>
+    <div class="link">
+      <p style="text-align: center; color:white">¿Aún no tienes cuenta?</p>
+      <p style="text-align: center; color: white;  margin-top: -10px;" [routerLink]="['/registro']"><u>Regístrate aqui</u></p>
+    </div>  
+  </div>
+
+  <div class="fondo">    
+    <p style="text-align: center; color:white; font-size: small;">FASTERY INC ®2020</p>
+    <p style="text-align: center; color:white;  margin-top: -10px; font-size: small;">TODOS LOS DERECHOS RESERVADOS.</p>
+  </div>
+</ion-content>
+

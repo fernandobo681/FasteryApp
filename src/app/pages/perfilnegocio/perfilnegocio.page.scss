@@ -1,0 +1,51 @@
+ion-content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imgfondo{
+    margin-top: -16%;
+}
+
+.logo{
+    margin-left: 5%;
+    zoom: 1.5;
+    border-color: black;
+}
+
+.titulo{
+
+   background-color: white; 
+   margin-top: -15%; 
+}
+
+ion-avatar img{
+    // width: 90px !important;
+    // height: 60px !important;
+    // border-radius: 50% !important;
+    // overflow: hidden !important;
+
+    border: .5px solid gray;
+  }
+
+  .navbar{
+      background-color:#400082;
+  }
+
+
+  .menu{
+    text-align: center;
+    p{
+      margin-top: 0px;
+    }
+  }
+
+  .botoncarro{
+    border-radius: 5px;
+    color: white;
+    background-color: #400082;
+    margin: 5px;
+  }

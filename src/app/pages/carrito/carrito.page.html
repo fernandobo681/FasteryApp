@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><strong>Tu Carrito</strong></ion-title>
+    <ion-icon color="dark" slot="end" class="car" name="close-circle-outline" style="zoom: 1.5; margin-right: 5px;" (click)="regresar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="parati">    
+       <ion-list>
+        <ion-item *ngFor="let platillos of menu" >
+          <ion-avatar slot="start" style="--border-radius:5px; zoom: 2;">
+            <img style=" border: white;" [src]='platillos.imagen'>
+          </ion-avatar>
+          <ion-label>
+            <h2><strong>{{platillos.nombreproducto}}</strong></h2>
+            <h2>${{platillos.precio}}</h2>
+
+            <div class="contador">
+              <ion-grid>
+                <ion-row>
+                  <ion-col class="ion-align-self-start" style="margin-left: 5px;"><strong>-</strong></ion-col>
+                  <ion-col class="ion-align-self-center" style="text-align: center;">1</ion-col>
+                  <ion-col class="ion-align-self-end" style="text-align: end; margin-right: 5px;"><strong>+</strong></ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            <!-- <h5 style="color: #400082;" *ngIf="platillos.enviofast === true"><ion-icon style="margin-right: 5px;" name="flash"></ion-icon><strong><i>Envío Fast</i></strong></h5> -->
+            <!-- <ion-button>Agregar</ion-button> -->
+          </ion-label>
+        </ion-item> 
+      </ion-list>
+   
+   
+   </div>
+
+</ion-content>
+
+<ion-footer>
+
+  <div class="botoncarro">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-align-self-start" style="margin-left: 5px;">0</ion-col>
+        <ion-col class="ion-align-self-center" style="text-align: center;">Continuar</ion-col>
+        <ion-col class="ion-align-self-end" style="text-align: end; margin-right: 5px;">$0</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-footer>

@@ -1,0 +1,49 @@
+<ion-content style=" --background: linear-gradient(to bottom,#471975, #200041);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  
+  <div class="titulo">
+    <p style="font-size: 70px; text-align: center;"><strong><i>FASTERY</i></strong></p>
+    <p style="font-size: 20px; margin-top: -80px;  text-align: center; margin-left: 10px;"><i>DELIVERY & FOOD</i></p>
+  </div>
+
+
+   <div class="login-form">
+     <div style="background: white" >
+       <form>
+         <ion-list lines="none">
+           <h1 align="center"  class="title">Iniciar sesión</h1>
+           <br>
+ 
+           <form >
+           <ion-item>
+            <ion-label color="primary" position="floating">Correo</ion-label>
+             <ion-input type="email" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Contraseña</ion-label>
+             <ion-input type="password"></ion-input>
+           </ion-item>
+ 
+          
+           <div class="btnSesion" (click)="iniciarSesion()" >
+            <p style="color: white;"><strong>Iniciar Sesión</strong></p>
+          </div>
+         </form>
+ 
+         </ion-list>
+         <div class="preguntas">
+           <br>
+         <a class="parrafo">¿Nuevo usuario? </a> <a class="ahref" [routerLink]="['/registro']">Crear una cuenta</a>
+         <br>
+           <a class="ahref" >¿Olvidaste tu contraseña?</a>
+         </div>
+ 
+ 
+       </form>
+ 
+     </div>
+ 
+   </div>
+ 
+ </ion-content>
+ 
+ 

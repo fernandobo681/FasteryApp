@@ -1,0 +1,67 @@
+<ion-content style=" --background: linear-gradient(to bottom,#471975, #200041);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  
+  <div class="titulo">
+    <p style="font-size: 70px; text-align: center;"><strong><i>FASTERY</i></strong></p>
+    <p style="font-size: 20px; margin-top: -80px;  text-align: center; margin-left: 10px;"><i>DELIVERY & FOOD</i></p>
+  </div>
+
+
+   <div class="login-form">
+     <div style="background: white" >
+       <form>
+         <ion-list lines="none">
+           <h1 align="center"  class="title">Regístrate</h1>
+           <br>
+ 
+           <form >
+           <ion-item>
+            <ion-label color="primary" position="floating">Nombre(s)</ion-label>
+             <ion-input type="text" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Apellido(s)</ion-label>
+             <ion-input type="text" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary">Sexo</ion-label>
+            <ion-select okText="Aceptar" cancelText="Cancelar">
+              <ion-select-option value="M">Masculino</ion-select-option>
+              <ion-select-option value="F">Femenino</ion-select-option>
+              <ion-select-option value="O">Otro</ion-select-option>      
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary" position="floating">Fecha de nacimiento</ion-label>            
+             <ion-datetime></ion-datetime>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Teléfono</ion-label>
+             <ion-input type="number" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Correo</ion-label>
+             <ion-input type="email" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Contraseña</ion-label>
+             <ion-input type="text" ></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-label color="primary" position="floating">Repetir Contraseña</ion-label>
+             <ion-input type="text" ></ion-input>
+           </ion-item>
+           <br>
+           <ion-checkbox></ion-checkbox><ion-label style="margin-left: 10px;">Acepto todos los términos y condiciones.</ion-label>
+           <br>
+           <ion-label><strong>Intregrar reCAPTCHA</strong></ion-label>
+           <div class="btnSesion" (click)="registrar()" >
+            <p style="color: white;"><strong>Registrar</strong></p>
+          </div>         
+         </form> 
+         </ion-list>     
+       </form>
+     </div>
+   </div>
+ </ion-content>
+ 
+ 
